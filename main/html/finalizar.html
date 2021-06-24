@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>Principal - Crédito para todxs</title>
+</head>
+<body onload="ola()">
+    <main id="corpo">
+        <div id="faixalat">
+            <img id="logolat" src="../../images/whitelogo.png" alt="Logo branca">  
+            <div class="inicio"><i class="fas fa-home fa-3x" onclick="home()"></i></div>         
+        </div>
+        <div id="faixasup">
+            <h1 id="titulo" onclick="home()">Crédito para todxs</h1>
+            <h1 id="logout" onclick="logout()"><i class="fas fa-sign-out-alt" onclick="logout()"></i> Logout</h1>
+        </div>       
+        <div id="inserir_ola"></div>
+        <div id="conteudo">
+            <p>Preencha seus dados para sua solicitação ser enviada à Central Financeira.</p>
+            <div class="box-form">
+                <label for="nome-completo">Nome Completo</label><br>
+                <input type="string" id="nome-completo" placeholder="João da Silva" required><br>
+                <label for="endereço">Endereço</label><br>
+                <input type="string" id="endereço" placeholder="Rua São Paulo, 999 Ap 03" required><br>
+                <label for="celular">Celular</label><br>
+                <input type="number" id="celular" placeholder="(47) 9 9999-8888" required minlength="11"><br>
+                <label for="cpf">CPF</label><br>
+                <input type="number" id="cpf" placeholder="000.000.000-00" required minlength="11"><br>
+                <label for="rd">RG</label><br>
+                <input type="number" id="rg" placeholder="0.000.000" required minlength="7"><br>
+                <button type="submit" id="analisar" onclick="enviar()" class="input_submit">Finalizar</button>
+                <div id="erro-enviar" class="erro"></div>
+            </div>
+            
+        </div>
+            
+    </main>
+    <script src="../js/index.js"></script>
+    <script src="../js/changes.js"></script>
+    <script src="../js/finalizar.js"></script>
+</body>
+</html>

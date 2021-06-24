@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <title>Principal - Crédito para todxs</title>
+</head>
+<body>
+    <main id="corpo">
+        <div id="faixalat">
+            <img id="logolat" src="../../images/whitelogo.png" alt="Logo branca">
+            <div class="inicio"><i class="fas fa-home fa-3x" onclick="home()"></i></div>
+        </div>
+        <div id="faixasup">
+            <h1 id="titulo">Crédito para todxs</h1>
+            <h1 id="logout" onclick="logout()"><i class="fas fa-sign-out-alt" onclick="logout()"></i> Logout</h1>
+        </div>
+            <div id="inserir_ola"></div>
+            <div id="conteudo">
+                <p>Por favor, preencha os campos abaixo para realizarmos uma análise de seu perfil e sugerir as melhores ofertas para você!</p>
+                <div class="box-form">
+                    <label for="renda">Renda Mensal Atual</label><br>
+                    <input type="number" step="0.01" min="0.01" id="renda" placeholder="3500,00" required><br>
+                    <label for="renda">Despesas Fixas</label><br>
+                    <input type="number" step="0.01" min="0.01" id="fixas" placeholder="2000,00" required><br>
+                    <label for="renda">Média de Despesas Variáveis</label><br>
+                    <input type="number" step="0.01" min="0.01" id="variaveis" placeholder="500,00" required><br>
+                    <button type="button" id="analisar" class="input_submit" onclick="analisar()">Analisar</button>
+                    <div id="erro" class="erro"></div>
+                </div>
+                
+        </div>
+        
+            
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

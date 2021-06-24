@@ -1,0 +1,24 @@
+@font-face {
+    font-family: QuickL;
+    src: url(../../font/Quicksand-Light.ttf);
+}
+
+@font-face {
+    font-family: QuickR;
+    src: url(../../font/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: QuickB;
+    src: url(../../font/Quicksand-Bold.ttf);
+}
+
+@font-face {
+    font-family: QuickM;
+    src: url(../../font/Quicksand-Medium.ttf);
+}
+
+@font-face {
+    font-family: Bowlby;
+    src: url(../../font/BowlbyOne-Regular.ttf);
+}
